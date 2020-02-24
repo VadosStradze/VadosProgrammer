@@ -3,6 +3,8 @@ public class People {
         private String Login;
         private Integer Password;
 
+
+
         void info (){
             System.out.println("User information:");
             System.out.println("User login: " + Login +  "/n User Password " + Password);
