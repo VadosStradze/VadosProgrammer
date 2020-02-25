@@ -8,9 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main extends People {
+public class Main  {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Класс консоль и перегрузка или переопределение статического метода main 
+
 
         List<String> users = new ArrayList<String>();
 //        //List<Integer> passwords = new ArrayList<Integer>();
@@ -20,11 +21,11 @@ public class Main extends People {
 //       // People username = new People();
 
         int number;
-        System.out.println("Choose action:");
+        /*System.out.println("Choose action:");
         System.out.println("1. Add new user to list:");
         System.out.println("2. Remove person from list:");
         System.out.println("3. Show all users in list:");
-        System.out.println("0. Stop the program:");
+        System.out.println("0. Stop the program:");*/
 
         do {
             number = sc1.nextInt();
