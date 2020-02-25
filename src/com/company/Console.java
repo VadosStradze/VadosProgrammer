@@ -32,11 +32,12 @@ public class Console {
             password = scanner.nextLine();
             people.setPassword(password);
             population.add(people);
-            System.out.println("Login and password " + people + " had been added to list:");
+            System.out.println("Login and password for " + people + " had been added to list:");
             System.out.println("Next action:");
 
         } catch (Exception e) {
             System.out.println("User name is not valid:");
+
         }
         return population;
     }
@@ -57,6 +58,7 @@ public class Console {
 
         } catch (Exception e) {
             System.out.println("Object name is not valid:");
+            System.out.println("Next action:");
         }
         return population;
     }

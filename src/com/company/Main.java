@@ -16,8 +16,8 @@ public class Main  {
         List<People> population = new ArrayList<People>();
         Scanner scanner = new Scanner((System.in));
         int number;
+        menu.showConsole();
         do {
-            menu.showConsole();
             number = scanner.nextInt();
             switch (number) {
                 case 1:
