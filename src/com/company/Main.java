@@ -22,12 +22,12 @@ public class Main  {
             switch (number) {
                 case 1:
                     System.out.println("Add new user to list:");
-                    population = menu.action1(population);
+                    population = menu.add_object(population);
                     break;
 
                 case 2:
                     System.out.print("Remove object from list by name: ");
-                    population = menu.action2(population);
+                    population = menu.remove_object(population);
                     break;
                     /*System.out.print("Remove object from list by name: ");
                     try {
@@ -62,7 +62,6 @@ public class Main  {
                         System.out.println("---------------");
 
                     }
-
 
                     System.out.println("Next action:");
                     break;

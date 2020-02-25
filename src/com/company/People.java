@@ -5,7 +5,7 @@ public class People {
     private String Login;
     private String Password;
 
-    void info (){//todo create
+    void info (){
         System.out.println("User information:");
         System.out.println("User login: " + Login +  "/n User Password " + Password);
     }

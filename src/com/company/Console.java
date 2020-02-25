@@ -13,7 +13,7 @@ public class Console {
         System.out.println("0. Stop the program:");
     }
 
-    public List<People> action1(List<People> population){
+    public List<People> add_object(List<People> population){
         Scanner scanner = new Scanner((System.in));
         try {
             People people = new People();
@@ -32,7 +32,7 @@ public class Console {
             password = scanner.nextLine();
             people.setPassword(password);
             population.add(people);
-            System.out.println("Password " + people + " has been added to list:");
+            System.out.println("Login and password " + people + " had been added to list:");
             System.out.println("Next action:");
 
         } catch (Exception e) {
@@ -41,7 +41,7 @@ public class Console {
         return population;
     }
 
-    public List<People> action2(List<People> population){
+    public List<People> remove_object(List<People> population){
         Scanner scanner = new Scanner(System.in);
         try {
             String login;
