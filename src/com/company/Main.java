@@ -24,30 +24,10 @@ public class Main  {
                     System.out.println("Add new user to list:");
                     population = menu.add_object(population);
                     break;
-
                 case 2:
                     System.out.print("Remove object from list by name: ");
                     population = menu.remove_object(population);
                     break;
-                    /*System.out.print("Remove object from list by name: ");
-                    try {
-
-
-                        String login = "";
-                        login = scanner.nextLine();
-
-                        for (People people:
-                             population) {
-                            if(people.getLogin().equals(login))
-                                population.remove(people);
-                        }
-                        System.out.println("Object " + login + " has been removed from list:");
-                        System.out.println("Next action:");
-
-                    } catch (Exception e) {
-                        System.out.println("User mane is not valid:");
-                    }
-                    break;*/
                 case 3:
                     System.out.println("Show full list of users:");
                     if (population.isEmpty()){
@@ -64,6 +44,10 @@ public class Main  {
                     }
 
                     System.out.println("Next action:");
+                    break;
+                case 4:
+                    System.out.println("Choose alterable object:");
+                    population = menu.change_object(population);
                     break;
                 case 0:
                     System.out.println("Stop the program:");
