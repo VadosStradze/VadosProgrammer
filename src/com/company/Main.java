@@ -49,6 +49,11 @@ public class Main  {
                     System.out.println("Choose alterable object:");
                     population = menu.change_object(population);
                     break;
+                case 5:
+                    System.out.println("Enter the name of the user you are looking for");
+                    population = menu.find_object(population);
+                    break;
+
                 case 0:
                     System.out.println("Stop the program:");
                     scanner.close();

@@ -8,9 +8,10 @@ public class Console {
     public void showConsole() {
         System.out.println("Choose action:");
         System.out.println("1. Add new user to list:");
-        System.out.println("2. Remove person from list:");
+        System.out.println("2. Remove user from list:");
         System.out.println("3. Show all users in list:");
-        System.out.println("4. Change object name in list:");
+        System.out.println("4. Change user name in list:");
+        System.out.println("5. Find user by name:");
         System.out.println("0. Stop the program:");
     }
 
@@ -29,6 +30,31 @@ public class Console {
 
         }
 
+        return population;
+    }
+
+    public  List<People> find_object(List<People> population) {
+        Scanner scanner = new Scanner((System.in));
+
+         String login = scanner.nextLine();
+        try {
+            if (population.isEmpty()){
+                System.out.println("Collection is empty:");
+                System.out.println("Add user and try again:");
+                System.out.println("Next action:");
+            }
+            for (People i : population) {
+                if (i.getLogin().equals(login)) {
+                    System.out.println("A user with  name " + i + " is in the collection");
+                }
+                else {
+                    System.out.println("This user is not in the collection");
+                }
+                break;
+            }
+        } catch (Exception e) {
+            System.out.println("Another:");
+        }
         return population;
     }
 
